@@ -58,7 +58,7 @@ async function asyncRemoteListen(device) {
   await device.open();
   if (device.configuration === null)
     await device.selectConfiguration(1);
-  await device.claimInterface(1);
+  await device.claimInterface(0);
   await device.controlTransferOut({
     requestType: 'vendor',
     recipient: 'interface',
