@@ -1,0 +1,29 @@
+eChartEngine.js - contained in the html file and actually runs eChart
+eChartOnline.html - the shell that displays eChart in the browser
+eChartOnline2.html - used for testing of basic functions (currently displays one random letter/number/picture...that's it)
+letters.js - the "letter" object prototype (which holds the data points and draw function), also contains JS arrays with each letter's data points, initializes the letters array/object
+letterset.js - the "letterset" object prototype, also starts the letterset array
+
+LETTER SET FILES (may eventually combine into one file and minify)
+EC0.js - Psychometric
+EC1.js - Sloan 5 letter
+EC2.js - HOTV
+EC3.js - Numbered Slide
+EC4.js - ETDRS LogMAR Progression
+EC5.js - Snellen Standard 'E' Chart
+EC6.js - ETDRS Standard
+EC7.js - Numbers
+EC8.js - Pictures
+EC9.js - Sloan 5 sets
+EC10.js - Just for Fun!
+
+INCLUDED LIBRARIES
+bootstrap.bundle.min.js - bootstrap library (used for various html extras)
+bootstrap.min.css - bootstrap library (used for various html extras)
+jquery-3.2.1.slim.min.js - needed by bootstrap library (used for various html extras)
+math.js - used for matrix math (may be superfluous)
+mousetrap.min.js - used for key capturing (may eventually convert to pure JS but makes early development easy)
+underscore-min.js - utility functions (slight possibility of converting any usage of this library to pure JS but these are optimized functions so may leave as is)
+
+OTHER
+InitializeFonts.txt - original eChart letter drawing data points

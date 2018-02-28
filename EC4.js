@@ -1,0 +1,21 @@
+lettersetoptions.push(new letterset([
+  "ETDRS LogMAR Progression",
+  " 17            3             20 ",
+  " 400          VHCNO         ODHKR         SZRDN         ",
+  " 316          SVHCZ         ZKCSN         HCDRO         ",
+  " 252          OZDVK         CRHDV         RKVSN         ",
+  " 200          NCKZO         DSRKN         HVZDS         ",
+  " 160          RHSDK         CKZOH         NCVKD         ",
+  " 125          DOVHR         ONRKD         CZSHN         ",
+  " 100          CZRHS         KZVDC         ONVSR         ",
+  " 80           ONHRC         VSHZO         KDNRO         ",
+  " 63           DKSNV         HDKCR         ZKCSV         ",
+  " 50           ZSOKN         CSRHN         DVOHC         ",
+  " 40           CKDNR         SVZDK         OHVCK         ",
+  " 32           SRZKD         NCVOZ         HZCKO         ",
+  " 25           HZOVC         RHSDV         NCKHD         ",
+  " 20           NVDOK         SNROH         ZHCSR         ",
+  " 16           VHCNO         ODHKR         SZRDN         ",
+  " 12.5         SVHCZ         ZKCSN         HCDRO         ",
+  " 10           OZDVK         CRHDV         RKVSN         "
+]));

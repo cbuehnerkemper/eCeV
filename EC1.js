@@ -1,0 +1,17 @@
+lettersetoptions.push(new letterset([
+  "Sloan 5 letter",
+  " 13            3             20 ",
+  " 400          OZDVK         CRHDV         RKVSN         ",
+  " 200          SVHCZ         ZKCSN         HCDRO         ",
+  " 100          VHCNO         ODHKR         SZRDN         ",
+  " 80           NVDOR         SNROH         ZHCSR         ",
+  " 70           HZOVC         RHSDV         NCKHD         ",
+  " 60           SRZKD         NCVOZ         HZCKO         ",
+  " 50           CKDNR         SVZDK         OHVKC         ",
+  " 40           ZSOKN         CSRHN         DVOHC         ",
+  " 30           DKSNV         HDKCR         ZKCSV         ",
+  " 25           ONHRC         VSHZO         KDNRO         ",
+  " 20           CZRHS         KZVDC         ONVSR         ",
+  " 15           DOVHR         ONRKD         CZSHN         ",
+  " 10           RHSDK         CKZOH         NCVKD         ",
+]));

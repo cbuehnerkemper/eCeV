@@ -1,0 +1,21 @@
+lettersetoptions.push(new letterset([
+  "Psychometric",
+  " 17            8             20 ",
+  " 400          l             r             d             r             u             d             u             l             ",
+  " 316          d             u             d             r             u             r             l             l             ",
+  " 252          r             u             l             u             d             d             r             l             ",
+  " 200          u             u             l             r             l             d             r             d             ",
+  " 160          r             u             u             d             l             d             r             l             ",
+  " 126          d             l             r             r             u             d             u             l             ",
+  " 100          d             u             d             r             r             l             u             l             ",
+  " 80           r             u             l             r             l             d             d             u             ",
+  " 64           l             r             d             r             u             d             u             l             ",
+  " 50           d             u             d             r             u             r             l             l             ",
+  " 40           r             u             l             u             d             d             r             l             ",
+  " 32           u             u             l             r             l             d             r             d             ",
+  " 26           r             u             u             d             l             d             r             l             ",
+  " 20           d             l             r             r             u             d             u             l             ",
+  " 16           d             u             d             r             r             l             u             l             ",
+  " 12.5         r             u             l             r             l             d             d             u             ",
+  " 10           l             r             d             r             u             d             u             l             "
+]));

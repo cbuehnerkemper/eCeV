@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>👀 eChart Online 🅰️</title>
+	<style type="text/css">
+		canvas {
+		}
+
+		body {
+			margin: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+
+	<div class="modal" id="lettersetselectormodal" tabindex="-1" role="dialog">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">Select a letter set</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+				<div id="lettersetbuttons" class="modal-body">
+				</div>
+	      <div class="modal-footer"></div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal" id="control-panel-modal" tabindex="-1" role="dialog">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">eChart Online - Control Panel</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+				<div class="modal-body">
+					<form>
+						<div class="container">
+						  <div class="row">
+						    <div class="col-md">
+
+									<div class="form-group row">
+										<label for="inputLabelUnits" class="col-sm-3 col-form-label">Label Units</label>
+								    <div class="col-sm-9">
+											<select class="custom-select selectSetting" id="labelUnits">
+											  <option selected disabled></option>
+											  <option value="imperial">20/20 Imperial</option>
+											  <option value="metric">6/6 Metric</option>
+												<option value="decimal">Decimal</option>
+											</select>
+								    </div>
+									</div>
+
+						    </div>
+						    <div class="col-md">
+
+									<div class="form-group row">
+										<label for="inputLabelSize" class="col-sm-3 col-form-label">Label Size</label>
+								    <div class="col-sm-9">
+											<select class="custom-select selectSetting" id="labelSize">
+											  <option value="0">None</option>
+											  <option value="10" selected>20/10</option>
+											  <option value="15">20/15</option>
+												<option value="20">20/20</option>
+												<option value="25">20/25</option>
+												<option value="30">20/30</option>
+												<option value="40">20/40</option>
+												<option value="50">20/50</option>
+											</select>
+								    </div>
+									</div>
+
+						    </div>
+								<div class="col-md">
+
+									<div class="form-group row">
+										<label for="inputLabelColor" class="col-sm-3 col-form-label">Label Color</label>
+								    <div class="col-sm-9">
+											<select class="custom-select selectSetting" id="labelColor">
+											  <option value="blue" selected>Blue</option>
+											  <option value="red">Red</option>
+											  <option value="green">Green</option>
+												<option value="gray">Gray</option>
+												<option value="white">White</option>
+												<option value="black">Black</option>
+												<option value="yellow">Yellow</option>
+												<option value="cyan">Cyan</option>
+											</select>
+								    </div>
+									</div>
+
+						    </div>
+
+								<div class="col-md">
+									<div class="form-group row">
+										<label for="inputLabelNumerator" class="col-sm-3 col-form-label">Label Numerator</label>
+								    <div class="col-sm-9">
+											<select class="custom-select selectSetting" id="labelNumerator">
+											  <option value="false" selected>Hide</option>
+											  <option value="true">Show</option>
+											</select>
+								    </div>
+									</div>
+						    </div>
+
+								<div class="col-md">
+									<div class="form-group row">
+										<label for="inputMaxRows" class="col-sm-3 col-form-label">Max Rows Displayed</label>
+								    <div class="col-sm-9">
+								      <input type="number" class="form-control" min="1" step="1" id="maxRows">
+								    </div>
+									</div>
+
+								</div>
+						  </div>
+						</div>
+				  </form>
+				</div>
+	      <div class="modal-footer"></div>
+	    </div>
+	  </div>
+	</div>
+
+	<canvas usemap="#control"></canvas>
+	<map name="control">
+    <area id="controlLink" shape="rect" coords="0,0,0,0" onclick="showControlPanel()">
+	</map>
+	<script src="jquery-3.2.1.slim.min.js"></script>
+	<script src="bootstrap.bundle.min.js"></script>
+	<script src="underscore-min.js"></script>
+	<script src="mousetrap.min.js"></script>
+	<script src="letterset.js"></script>
+	<script src="letters.js"></script>
+	<script src="EC0.js"></script>
+	<script src="EC1.js"></script>
+	<script src="EC2.js"></script>
+	<script src="EC3.js"></script>
+	<script src="EC4.js"></script>
+	<script src="EC5.js"></script>
+	<script src="EC6.js"></script>
+	<script src="EC7.js"></script>
+	<script src="EC8.js"></script>
+	<script src="EC9.js"></script>
+	<script src="EC10.js"></script>
+	<script src="eChartEngine.js"></script>
+</body>
+</html>
