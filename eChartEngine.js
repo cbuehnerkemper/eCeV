@@ -55,31 +55,34 @@ canv.ondblclick=function (e) {
 }
 
 async function asyncRemoteListen(device) {
-  await device.open();
-  if (device.configuration === null)
-    await device.selectConfiguration(1);
-  await device.claimInterface(0);
-  await device.controlTransferOut({
-    requestType: 'vendor',
-    recipient: 'interface',
-    request: 0x01,  // vendor-specific request: enable channels
-    value: 0x0013,  // 0b00010011 (channels 1, 2 and 5)
-    index: 0x0000   // Interface 0 is the recipient
-  });
-  while (true) {
-    let result = await data.transferIn(1, 6);
+  await device.open()
+    .then(function() {device.selectConfiguration(1)})
+    .then(function() {device.claimInterface(0)});
 
-    if (result.data && result.data.byteLength === 6) {
-      console.log('Channel 1: ' + result.data.getUint16(0));
-      console.log('Channel 2: ' + result.data.getUint16(2));
-      console.log('Channel 5: ' + result.data.getUint16(4));
-    }
-
-    if (result.status === 'stall') {
-      console.warn('Endpoint stalled. Clearing.');
-      await device.clearHalt(1);
-    }
-  }
+  // if (device.configuration === null)
+  //   await device.selectConfiguration(1);
+  // await device.claimInterface(0);
+  // await device.controlTransferOut({
+  //   requestType: 'vendor',
+  //   recipient: 'interface',
+  //   request: 0x01,  // vendor-specific request: enable channels
+  //   value: 0x0013,  // 0b00010011 (channels 1, 2 and 5)
+  //   index: 0x0000   // Interface 0 is the recipient
+  // });
+  // while (true) {
+  //   let result = await data.transferIn(1, 6);
+  //
+  //   if (result.data && result.data.byteLength === 6) {
+  //     console.log('Channel 1: ' + result.data.getUint16(0));
+  //     console.log('Channel 2: ' + result.data.getUint16(2));
+  //     console.log('Channel 5: ' + result.data.getUint16(4));
+  //   }
+  //
+  //   if (result.status === 'stall') {
+  //     console.warn('Endpoint stalled. Clearing.');
+  //     await device.clearHalt(1);
+  //   }
+  // }
 }
 
 canv.width = window.innerWidth; // set width of canvas to width of the window
