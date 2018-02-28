@@ -56,8 +56,8 @@ canv.ondblclick=function (e) {
 
 async function asyncRemoteListen(device) {
   await device.open()
-    .then(function() {device.selectConfiguration(1)})
-    .then(function() {device.claimInterface(0)});
+    .then(function() {device.selectConfiguration(1)});
+    //.then(function() {device.claimInterface(0)});
 
   // if (device.configuration === null)
   //   await device.selectConfiguration(1);
