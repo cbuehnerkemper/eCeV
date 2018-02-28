@@ -64,7 +64,7 @@ async function asyncRemoteListen(device) {
     recipient: 'interface',
     request: 0x01,  // vendor-specific request: enable channels
     value: 0x0013,  // 0b00010011 (channels 1, 2 and 5)
-    index: 0x0001   // Interface 1 is the recipient
+    index: 0x0000   // Interface 0 is the recipient
   });
   while (true) {
     let result = await data.transferIn(1, 6);
